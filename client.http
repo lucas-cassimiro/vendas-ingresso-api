@@ -5,3 +5,49 @@ Content-Type: application/json
     "email": "partner1@user.com",
     "password_hash": "secret"
 }
+
+###
+POST http://localhost:3333/partners
+Content-Type: application/json
+
+{
+    "name": "Partner 01",
+    "email": "partner1@user.com",
+    "password_hash": "secret",
+    "company_name": "Company name 1"
+}
+
+###
+POST http://localhost:3333/customers
+Content-Type: application/json
+
+{
+    "name": "Customer 01",
+    "email": "partner1@user.com",
+    "password_hash": "secret",
+    "address": "Address test",
+    "phone": "13991593741"
+}
+
+### Criação do evento pelo parceiro
+POST http://localhost:3333/partners/events
+Content-Type: application/json
+
+{
+    "name": "Event 01",
+    "description": "Event description",
+    "date": "2025-01-01T00:00:00",
+    "location": "Rua X, bairro etc"
+}
+
+### Listagens de eventos do parceiro
+GET http://localhost:3333/partners/events
+
+### Listagem de um evento do parceiro
+GET http://localhost:3333/partners/events/1
+
+### Listagem de eventos
+GET http://localhost:3333/events
+
+### Listagem de um evento
+GET http://localhost:3333/events/1
