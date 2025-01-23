@@ -1,4 +1,14 @@
 import express from 'express'
+import * as mysql from 'mysql2/promise'
+
+function createConnection() {
+    return mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'root',
+        database: 'tickets'
+    })
+}
 
 const app = express()
 
