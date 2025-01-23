@@ -23,7 +23,7 @@ Content-Type: application/json
 
 {
     "name": "Customer 01",
-    "email": "partner1@user.com",
+    "email": "customer1@user.com",
     "password_hash": "secret",
     "address": "Address test",
     "phone": "13991593741"
