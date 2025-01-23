@@ -1,0 +1,7 @@
+POST http://localhost:3333/auth
+Content-Type: application/json
+
+{
+    "email": "partner1@user.com",
+    "password_hash": "secret"
+}
